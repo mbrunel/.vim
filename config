@@ -1,0 +1,20 @@
+#!/bin/bash
+
+if [ ! -d "$HOME/.vim" ]
+then
+	echo '.vim has is missing, cloning...'
+	git clone https://github.com/mbrunel/.vim.git $HOME/.vim
+	echo 'setting up depencies...'
+	cd $HOME/.vim
+	git submodule init
+else
+	cd $HOME/.vim
+	echo 'update...'
+	git pull
+fi
+git submodule update --remote
+
+rm -f $HOME/.vimrc
+ln -s vimrc $HOME/.vimrc
+cp config $HOME/.vimconfig.sh
+export vimconfig='./$HOME/.vimconfig.sh'
