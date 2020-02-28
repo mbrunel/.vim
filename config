@@ -17,4 +17,8 @@ git submodule update --remote
 rm -f $HOME/.vimrc
 ln -s vimrc $HOME/.vimrc
 cp config $HOME/.vimconfig.sh
-export vimconfig='./$HOME/.vimconfig.sh'
+test=`cat $HOME/.zshrc | grep vimconfig`
+if [[ -z $test ]]
+then
+	echo "alias vimconfig=\"$HOME/.vimconfig.sh\"" >> $HOME/.zshrc
+fi
