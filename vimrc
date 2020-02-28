@@ -1,14 +1,3 @@
-" **************************************************************************** "
-"                                                                              "
-"                                                         :::      ::::::::    "
-"    vimrc                                              :+:      :+:    :+:    "
-"                                                     +:+ +:+         +:+      "
-"    By: mbrunel <mbrunel@student.42.fr>            +#+  +:+       +#+         "
-"                                                 +#+#+#+#+#+   +#+            "
-"    Created: 2020/02/27 21:27:55 by mbrunel           #+#    #+#              "
-"    Updated: 2020/02/27 21:34:38 by mbrunel          ###   ########.fr        "
-"                                                                              "
-" **************************************************************************** "
 
 "Plugin gestion
 execute pathogen#infect()
@@ -53,4 +42,4 @@ inoremap <left> <nop>
 inoremap <right> <nop>
 inoremap <ESC> <nop>
 inoremap jk <ESC>
-
+inoremap <f5> <f1>
