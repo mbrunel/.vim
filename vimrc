@@ -10,6 +10,7 @@ set clipboard=unnamedplus
 set showcmd
 set ruler
 set list
+set noswapfile
 
 "Aesthetics
 syntax on
