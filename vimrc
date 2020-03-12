@@ -6,11 +6,16 @@ execute pathogen#infect()
 set nocompatible
 let mapleader =" "
 set encoding=utf-8
-set clipboard=unnamedplus
 set showcmd
 set ruler
 set list
 set noswapfile
+
+if system('uname -s') == "Darwin\n" "yank settings
+  set clipboard=unnamed "OSX
+else
+  set clipboard=unnamedplus "Linux
+endif
 
 "Aesthetics
 syntax on
