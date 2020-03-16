@@ -6,7 +6,7 @@
 "    By: mbrunel <mbrunel@student.42.fr>            +#+  +:+       +#+         "
 "                                                 +#+#+#+#+#+   +#+            "
 "    Created: 2020/02/27 21:27:55 by mbrunel           #+#    #+#              "
-"    Updated: 2020/02/27 21:34:38 by mbrunel          ###   ########.fr        "
+"    Updated: 2020/02/28 17:20:30 by mbrunel          ###   ########.fr        "
 "                                                                              "
 " **************************************************************************** "
 
@@ -20,6 +20,8 @@ set encoding=utf-8
 set clipboard=unnamedplus
 set showcmd
 set ruler
+set wildmenu
+set wildmode=full
 set list
 
 "Aesthetics
