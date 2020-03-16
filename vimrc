@@ -6,7 +6,7 @@
 "    By: mbrunel <mbrunel@student.42.fr>            +#+  +:+       +#+         "
 "                                                 +#+#+#+#+#+   +#+            "
 "    Created: 2020/02/27 21:27:55 by mbrunel           #+#    #+#              "
-"    Updated: 2020/02/28 17:20:30 by mbrunel          ###   ########.fr        "
+"    Updated: 2020/03/16 02:00:06 by mbrunel          ###   ########.fr        "
 "                                                                              "
 " **************************************************************************** "
 
@@ -17,12 +17,18 @@ execute pathogen#infect()
 set nocompatible
 let mapleader =" "
 set encoding=utf-8
-set clipboard=unnamedplus
 set showcmd
 set ruler
 set wildmenu
 set wildmode=full
 set list
+set noswapfile
+
+if system('uname -s') == "Darwin\n" "yank settings
+  set clipboard=unnamed "OSX
+else
+  set clipboard=unnamedplus "Linux
+endif
 
 "Aesthetics
 syntax on
@@ -55,4 +61,4 @@ inoremap <left> <nop>
 inoremap <right> <nop>
 inoremap <ESC> <nop>
 inoremap jk <ESC>
-
+inoremap <f5> <f1>

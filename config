@@ -22,3 +22,5 @@ if [[ -z $test ]]
 then
 	echo "alias vimconfig=\"$HOME/.vimconfig.sh\"" >> $HOME/.zshrc
 fi
+file="$HOME/.vim/bundle/vim-42header/after/plugin/42header.vim"
+sed 's/<f1>/<f5>/g' $file > tmp ; rm $file ; mv tmp $file
