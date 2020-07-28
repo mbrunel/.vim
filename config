@@ -12,6 +12,7 @@ else
 	echo 'update...'
 	git pull
 fi
+git submodule init /$HOME/.vim/bundle/vim-42header
 git submodule update --remote
 
 rm -f $HOME/.vimrc
