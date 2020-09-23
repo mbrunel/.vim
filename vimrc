@@ -6,7 +6,7 @@
 "    By: mbrunel <mbrunel@student.42.fr>            +#+  +:+       +#+         "
 "                                                 +#+#+#+#+#+   +#+            "
 "    Created: 2020/02/27 21:27:55 by mbrunel           #+#    #+#              "
-"    Updated: 2020/03/16 02:00:06 by mbrunel          ###   ########.fr        "
+"    Updated: 2020/09/23 21:56:33 by mbrunel          ###   ########.fr        "
 "                                                                              "
 " **************************************************************************** "
 
@@ -51,6 +51,9 @@ set lcs=tab:\>\-
 set lcs+=space:·
 
 "rebind user-friendly keys
+nnoremap j <left>
+nnoremap l <down>
+nnoremap ; <right>
 nnoremap <up> <nop>
 nnoremap <down> <nop>
 nnoremap <left> <nop>
